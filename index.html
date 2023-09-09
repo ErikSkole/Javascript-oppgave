@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="formBoks">
+            <form id="personInfoForm">
+                <label class="formLabels" for="input1">Fornavn</label>
+                <input id="input1" type="text">
+                <label class="formLabels" for="input2">Etternavn</label>
+                <input id="input2" type="text">
+                <label class="formLabels" for="input3">Adresse</label>
+                <input id="input3" type="text">
+                <label class="formLabels" for="input4">Postnummer</label>
+                <input id="input4" type="number">
+                <label class="formLabels" for="input5">Poststed</label>
+                <input id="input5" type="text">
+                <label class="formLabels" for="input6" maxlength="8">Tlf nummer</label>
+                <input id="input6" type="number">
+                <label class="formLabels" for="input7">Passord</label>
+                <input id="input7" type="password">
+                <p id="errorMessage"></p>
+                <button class="submitBtn" type="button" onclick="getInfo()">Submit</button>
+            </form>
+            <div id="resultat">
+                <h2 class="overskrift">
+                    Lol jeg leaket nettopp personinformasjonen din!
+                </h2>
+                <p id="resultatTekst"></p>
+            </div>
+        </div>
+        <div id="tilbakeKnapp">
+            <button onclick="draTilbake()">Tilbake</button>
+        </div>
+    </main>
+</body>
+</html>
